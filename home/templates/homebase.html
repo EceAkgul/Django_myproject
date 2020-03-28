@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title> {% block title %} ANASAYFA {% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    {% load static %}
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href=" {% static 'css/animate.css' %}">
+
+    <link rel="stylesheet" href=" {% static 'css/owl.carousel.min.css' %} ">
+    <link rel="stylesheet" href=" {% static 'css/owl.theme.default.min.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+ {% block head %}  {% endblock %}
+</head>
+
+<body>
+
+  {% include 'header.html' %}
+  {% block sidebar %}  {% include 'sidebar.html' %} {% endblock %}
+  {% block slider %}  {% include 'slider.html' %} {% endblock %}
+  {% block content %}  {% include 'content.html' %}  {% endblock %}
+  {% block body %}  {% endblock %}
+
+  {% block footer %} {% include 'footer.html' %} {% endblock %}
+</body>
+</html>
