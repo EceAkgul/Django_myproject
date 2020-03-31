@@ -1,10 +1,12 @@
 …or create a new repository on the command line
 echo "# Django_myproject" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/EceAkgul/Django_myproject.git
-git push -u origin master
+git init  ***BİR KEZ
+git add README.md  ***BİR KEZ
+git add . ** HER GÜNCELLEME İSTEDİĞİMİZDE 
+git commit -m "first commit"   *HER GÜNCELLEME YAPMAK İSTEDİĞİMİZDE 
+git remote add origin https://github.com/EceAkgul/Django_myproject.git  ***BİR KEZ***
+git push -u origin master   ** HER GÜNCELLEME İSTEDİĞİMİZDE 
+	
                 
 …or push an existing repository from the command line
 git remote add origin https://github.com/EceAkgul/Django_myproject.git
