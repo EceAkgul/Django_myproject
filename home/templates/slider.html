@@ -1,4 +1,5 @@
      {% load static %}
+     {% if page  %}
    <div class="hero-wrap">
 	    <div class="home-slider owl-carousel">
 	      <div class="slider-item" style="background-image:url({% static 'images/bg_1.jpg' %});">
@@ -44,3 +45,5 @@
 	      </div>
 	    </div>
 	  </div>
+
+     {% endif %}
