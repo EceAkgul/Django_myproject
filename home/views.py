@@ -2,12 +2,16 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
+from haber.models import Haber
 from home.models import Setting, ContactFormMessage, ContactFormu
 
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    context = {'setting' : setting, 'page':'home'}
+    sliderdata = Haber.objects.all()[:4]
+    context = {'setting' : setting,
+               'page':'home',
+               'sliderdata' : sliderdata}
     return render(request, 'index.html', context)
 
 def hakkimizda(request):
