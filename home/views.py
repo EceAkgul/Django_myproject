@@ -2,14 +2,16 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
-from haber.models import Haber
+from haber.models import Haber, Category
 from home.models import Setting, ContactFormMessage, ContactFormu
 
 
 def index(request):
     setting = Setting.objects.get(pk=1)
     sliderdata = Haber.objects.all()[:4]
+    category=Category.objects.all()
     context = {'setting' : setting,
+               'category' : category,
                'page':'home',
                'sliderdata' : sliderdata}
     return render(request, 'index.html', context)
