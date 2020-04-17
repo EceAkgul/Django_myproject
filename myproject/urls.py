@@ -29,6 +29,8 @@ urlpatterns = [
     path('haber/', include('haber.urls')),
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('category/<int:id>/', views.category_habers, name='category_habers'),
+    path('haber/<int:id>/', views.haber_detail, name='haber_detail'),
 ]
 
 if settings.DEBUG:  # new

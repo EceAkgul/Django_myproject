@@ -4,6 +4,7 @@
 	    <div class="home-slider owl-carousel">
 
             {%for rs in sliderdata  %}
+                <a href="/haber/{{ rs.id }}">
 	      <div class="slider-item" style="background-image:url({{ rs.image.url }});">
 	      	<div class="overlay"></div>
 	        <div class="container">
@@ -16,7 +17,7 @@
 		          </div>
 		        </div>
 	        </div>
-	      </div>
+          </div></a>
             {% endfor %}
 
 

@@ -4,7 +4,8 @@ from django.contrib import admin
 from django.utils.html import format_html
 from mptt.admin import MPTTModelAdmin, DraggableMPTTAdmin
 
-from haber.models import Category, Haber, Images
+from haber.models import Category, Haber, Images, Comment
+
 
 class HaberImagesInline(admin.TabularInline):
     model = Images
@@ -54,7 +55,7 @@ class CategoryAdmin2(DraggableMPTTAdmin):
         return qs
 
     def related_habers_count(self, instance):
-        return instance.products_count
+        return instance.habers_count
     related_habers_count.short_description = 'Related habers (for this specific category)'
 
     def related_habers_cumulative_count(self, instance):
@@ -62,8 +63,11 @@ class CategoryAdmin2(DraggableMPTTAdmin):
     related_habers_cumulative_count.short_description = 'Related habers (in tree)'
 
 
-
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['subject', 'comment', 'haber', 'status', 'user']
+    list_filter = ['status']
 
 admin.site.register(Category, CategoryAdmin2)
 admin.site.register(Haber, HaberAdmin)
 admin.site.register(Images, ImagesAdmin)
+admin.site.register(Comment, CommentAdmin)
