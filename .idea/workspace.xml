@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="144da803-1cbe-4d13-8062-0b7644a7c8fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/haber/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/haber/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/haber/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/haber/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/haber/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/haber/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/haber/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/haber/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="144da803-1cbe-4d13-8062-0b7644a7c8fb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +122,7 @@
       <workItem from="1586426477808" duration="11825000" />
       <workItem from="1586951214101" duration="5372000" />
       <workItem from="1587043339991" duration="5846000" />
-      <workItem from="1587114418358" duration="17106000" />
+      <workItem from="1587114418358" duration="17366000" />
     </task>
     <task id="LOCAL-00001" summary="DENEME DEĞİŞİKLİK">
       <created>1585408923653</created>
@@ -178,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586523359356</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="19. video dahil yapıldı">
+      <created>1587155499616</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587155499617</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +186,8 @@
     <MESSAGE value="13. video dahil yapıldı" />
     <MESSAGE value="slider videosu(14)" />
     <MESSAGE value="e ticaret kategori alt kategori videosu" />
-    <option name="LAST_COMMIT_MESSAGE" value="e ticaret kategori alt kategori videosu" />
+    <MESSAGE value="19. video dahil yapıldı" />
+    <option name="LAST_COMMIT_MESSAGE" value="19. video dahil yapıldı" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585408598523">
@@ -202,10 +198,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="453" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1585224620527" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586523353784">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587155495354">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1586523353784" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1587155495354" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1586972150414">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
