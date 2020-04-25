@@ -1,26 +1,93 @@
+{% load static %}
+<script>
 
-  {% load static %}
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
+    $(function() {
+        $("#query").autocomplete({
+            source: "/search_auto/",
+            select: function (event, ui) { //item selected
+                AutoCompleteSelectHandler(event, ui)
+            },
+            minLength: 2,
+        });
+    });
 
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="fa fa-bars"></span> Menu
-	      </button>
-				<form action="#" class="searchform order-lg-last">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-          </div>
+    function AutoCompleteSelectHandler(event, ui)
+    {
+        var selectedObj = ui.item;
+    }
+
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+
+    <div class="container">
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+        </button>
+        <form action="/search/" method="post" class="searchform order-lg-last">
+            {% csrf_token %}
+            <div class="form-group d-flex" >
+                <input name="query" type="text" class="form-control pl-3" placeholder="Search" >
+                <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search" ></span></button>
+
+            </div>
+
+            {% load mptt_tags %}
+
+            <select name="catid">
+                {% recursetree category %}
+                    {% if node.is_leaf_node %} <option value="{{ node.id }}">{{ node.title }}</option>{% endif %}
+                    {% if not node.is_leaf_node %}
+                        <optgroup label="{{ node.title }}">
+                            {{ children }}
+                        </optgroup>
+                    {% endif %}
+
+
+                {% endrecursetree %}
+            </select>
+
         </form>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="/" class="nav-link">Anasayfa</a></li>
-	        	<li class="nav-item"><a href="/hakkimizda" class="nav-link">Hakkımızda</a></li>
-	        	<li class="nav-item"><a href="project.html" class="nav-link">Proje</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="/iletisim" class="nav-link">İletişim</a></li>
-                  <li class="nav-item"><a href="/referans" class="nav-link">Referanslar</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="/" class="nav-link">Anasayfa</a></li>
+                <li class="nav-item"><a href="/hakkimizda" class="nav-link">Hakkımızda</a></li>
+                <li class="nav-item"><a href="project.html" class="nav-link">Proje</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="/iletisim" class="nav-link">İletişim</a></li>
+                <li class="nav-item"><a href="/referans" class="nav-link">Referanslar</a></li>
+      {% if user.id is not None %}
+                <li class="nav-item"><a href="/" class="nav-link"><bold>Welcome,{{user.first_name}}</bold></a></li>
+                <li class="nav-item"><a href="/logout" class="nav-link"><bold>Logout</bold></a></li>
+      {% else %}
+                <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+               <li class="nav-item"> <a href="/signup" class="nav-link">SignUp</a></li>
+
+
+       {% endif %}
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+
+    $(function() {
+        $("#query").autocomplete({
+            source: "/search_auto/",
+            select: function (event, ui) { //item selected
+                AutoCompleteSelectHandler(event, ui)
+            },
+            minLength: 2,
+        });
+    });
+
+    function AutoCompleteSelectHandler(event, ui)
+    {
+        var selectedObj = ui.item;
+    }
+
+</script>

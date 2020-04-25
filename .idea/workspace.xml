@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="144da803-1cbe-4d13-8062-0b7644a7c8fb" name="Default Changelist" comment="" />
+    <list default="true" id="144da803-1cbe-4d13-8062-0b7644a7c8fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haber/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/haber/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haber/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/haber/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/0002_auto_20200331_2142.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/migrations/0002_auto_20200331_2142.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/homebase.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +32,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="auth_user: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -27,8 +64,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -49,6 +86,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -91,7 +129,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SQLite - db.sqlite3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -122,7 +165,11 @@
       <workItem from="1586426477808" duration="11825000" />
       <workItem from="1586951214101" duration="5372000" />
       <workItem from="1587043339991" duration="5846000" />
-      <workItem from="1587114418358" duration="17366000" />
+      <workItem from="1587114418358" duration="17444000" />
+      <workItem from="1587478766126" duration="1666000" />
+      <workItem from="1587651937478" duration="8279000" />
+      <workItem from="1587726780727" duration="2216000" />
+      <workItem from="1587819699005" duration="12786000" />
     </task>
     <task id="LOCAL-00001" summary="DENEME DEĞİŞİKLİK">
       <created>1585408923653</created>
@@ -173,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587155499617</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="19. video dahil yapıldı">
+      <created>1587155533975</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587155533975</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,26 +244,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="19. video dahil yapıldı" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585408598523">
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587820538420">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1585408598523" />
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1587820538420" />
     <state x="453" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585224620527">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="453" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1585224620527" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587155495354">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587155532081">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1587155495354" />
-    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1586972150414">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1587155532081" />
+    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1587820511854">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586972150414" />
-    <state x="288" y="41" key="Vcs.Push.Dialog.v2" timestamp="1586523372034">
+    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1587820511854" />
+    <state x="288" y="41" key="Vcs.Push.Dialog.v2" timestamp="1587155555064">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="288" y="41" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1586523372034" />
+    <state x="288" y="41" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1587155555064" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1586112886820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
