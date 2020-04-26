@@ -54,12 +54,10 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a href="/" class="nav-link">Anasayfa</a></li>
                 <li class="nav-item"><a href="/hakkimizda" class="nav-link">Hakkımızda</a></li>
-                <li class="nav-item"><a href="project.html" class="nav-link">Proje</a></li>
-                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
                 <li class="nav-item"><a href="/iletisim" class="nav-link">İletişim</a></li>
                 <li class="nav-item"><a href="/referans" class="nav-link">Referanslar</a></li>
       {% if user.id is not None %}
-                <li class="nav-item"><a href="/" class="nav-link"><bold>Welcome,{{user.first_name}}</bold></a></li>
+                <li class="nav-item"><a href="/user" class="nav-link"><bold>Welcome,{{user.first_name}}</bold><img src="{{ user.profile.image.url }}"></a></li>
                 <li class="nav-item"><a href="/logout" class="nav-link"><bold>Logout</bold></a></li>
       {% else %}
                 <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>

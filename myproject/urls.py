@@ -23,12 +23,15 @@ from home import views
 urlpatterns = [
     path('', include('home.urls')),
     path('home/', include('home.urls')),
+    path('haber/', include('haber.urls')),
+    path('user/', include('user.urls')),
+    path('admin/', admin.site.urls),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+
+
     path('hakkimizda/', views.hakkimizda, name='hakkimizda'),
     path('referans/', views.referans, name='referans'),
     path('iletisim/', views.iletisim, name='iletisim'),
-    path('haber/', include('haber.urls')),
-    path('admin/', admin.site.urls),
-    path('ckeditor/', include('ckeditor_uploader.urls')),
     path('category/<int:id>/', views.category_habers, name='category_habers'),
     path('haber/<int:id>/', views.haber_detail, name='haber_detail'),
     path('search/', views.haber_search, name='haber_search'),
@@ -36,6 +39,7 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout_view'),
     path('login/', views.login_view, name='login_view'),
     path('signup/', views.signup_view, name='signup_view'),
+
 
 ]
 
