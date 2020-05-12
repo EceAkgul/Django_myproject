@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 
 class SearchForm(forms.Form):
     query = forms.CharField(label='Search', max_length=100)
+    catid = forms.IntegerField()
 
 
 class SignUpForm(UserCreationForm):
@@ -12,6 +13,7 @@ class SignUpForm(UserCreationForm):
     email = forms.EmailField(max_length=200, label='Email:')
     first_name = forms.CharField(max_length=100, help_text = 'First Name', label='First Name:')
     last_name = forms.CharField(max_length=100, help_text = 'Last Name', label='Last Name:')
+
 
     class Meta:
         model = User
