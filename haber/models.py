@@ -1,5 +1,6 @@
 import uuid
 
+from ckeditor.widgets import CKEditorWidget
 from django.urls import reverse
 from mptt.models import MPTTModel
 from mptt.fields import TreeForeignKey
@@ -7,7 +8,7 @@ from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
-from django.forms import ModelForm
+from django.forms import ModelForm, Select, TextInput, FileInput
 from django.utils.safestring import mark_safe
 from ckeditor_uploader.fields import RichTextUploadingField
 
@@ -55,6 +56,7 @@ class Haber(models.Model):
         ('True', 'Evet'),
         ('False', 'Hayır'),
     )
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=150)
     description = models.CharField(max_length=255)
@@ -82,6 +84,19 @@ class Haber(models.Model):
     def get_absolute_url(self):
         return reverse('haber_detail', kwargs={'slug': self.slug})
 
+class HaberFormu(ModelForm):
+    class Meta:
+        model = Haber
+        fields = ['category', 'title', 'slug', 'image', 'keywords', 'description', 'detail']
+        widgets = {
+            'category': Select(attrs={'class': 'input', 'placeholder': 'type'}, choices=Category.objects.all()),
+            'title': TextInput(attrs={'class': 'input', 'placeholder': 'title'}),
+            'slug': TextInput(attrs={'class': 'input', 'placeholder': 'slug '}),
+            'image': FileInput(attrs={'class': 'input', 'placeholder': 'image'}),
+            'keywords': TextInput(attrs={'class': 'input', 'placeholder': 'keywords'}),
+            'description': TextInput(attrs={'class': 'input', 'placeholder': 'description'}),
+            'detail': TextInput(attrs={'class': 'input', 'placeholder': 'detail'}),
+        }
 
 class Images(models.Model):
     haber = models.ForeignKey(Haber, on_delete=models.CASCADE)
