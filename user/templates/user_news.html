@@ -45,9 +45,9 @@
                             <div class="col-md-7 d-flex align-items-stretch">
                                 <table>
                                 <tr>
-                                        <th class ="text-center">Subject</th>
-                                        <th class ="text-center">Haber </th>
-                                        <th class ="text-center">Comment </th>
+                                        <th class ="text-center">Title </th>
+                                        <th class ="text-center">Kategori </th>
+                                        <th class ="text-center">Görsel </th>
 
                                 </tr>
 
@@ -57,16 +57,16 @@
 
                                         <tr>
 
-                                            <td  class="text-left">{{ rs.detail|safe }}</td>
+                                            <td  class="text-left">{{ rs.title }}</td>
                                             <td  class="text-left">{{ rs.category }}</td>
-                                            <td class="text-center">{{ rs.create_at }}</td>
+                                           <td> <img src="{{ rs.image.url }}" class="text-left" style="height: 50px; width: 50px" ></td>
                                             <td class="text-left"><a class="btn-danger" href ="/user/haber_delete/{{ rs.id }}" onclick="return confirm('Delete! Are you sure?')">DELETE</a></td>
                                         </tr>
 
                                     {% endfor %}
 
                                 </table>
-                            </div>
+                           </div>
                         </div>
                         <div class="row">
 

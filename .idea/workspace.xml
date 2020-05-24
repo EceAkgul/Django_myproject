@@ -4,12 +4,14 @@
     <list default="true" id="144da803-1cbe-4d13-8062-0b7644a7c8fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/haber/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/haber/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/haber_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/haber_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/habers.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/habers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/hakkimizda.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/hakkimizda.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/referanslar.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/referanslar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_comments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/templates/user_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,13 @@
         <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="haber_haber: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -79,7 +88,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -120,7 +129,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SQLite - db.sqlite3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SQLite - db.sqlite3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4fe0de51" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -163,7 +182,13 @@
       <workItem from="1588184493017" duration="57000" />
       <workItem from="1589060556301" duration="614000" />
       <workItem from="1589198028984" duration="24704000" />
-      <workItem from="1589373690903" duration="9801000" />
+      <workItem from="1589373690903" duration="14091000" />
+      <workItem from="1589719399687" duration="1496000" />
+      <workItem from="1589890898632" duration="7752000" />
+      <workItem from="1589903011112" duration="243000" />
+      <workItem from="1589977387629" duration="1623000" />
+      <workItem from="1590140530557" duration="684000" />
+      <workItem from="1590238854129" duration="5717000" />
     </task>
     <task id="LOCAL-00001" summary="DENEME DEĞİŞİKLİK">
       <created>1585408923653</created>
@@ -263,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589317440472</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="SON">
+      <created>1589645458596</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589645458596</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +312,8 @@
     <MESSAGE value="26. video dahil yapıldı" />
     <MESSAGE value="24. video dahil yapıldı" />
     <MESSAGE value="12.05.2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.05.2020" />
+    <MESSAGE value="SON" />
+    <option name="LAST_COMMIT_MESSAGE" value="SON" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="28" key="#Inspections" timestamp="1589476378551">
@@ -299,18 +332,34 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1587899488164" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1589317439121">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590343845828">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589317439121" />
-    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1588184562828">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1590343845828" />
+    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1589903125096">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1588184562828" />
-    <state x="288" y="41" key="Vcs.Push.Dialog.v2" timestamp="1589317451498">
+    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1589903125096" />
+    <state width="905" height="182" key="GridCell.Tab.0.bottom" timestamp="1590238880021">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="288" y="41" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589317451498" />
+    <state width="905" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590238880021" />
+    <state width="905" height="182" key="GridCell.Tab.0.center" timestamp="1590238880020">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590238880020" />
+    <state width="905" height="182" key="GridCell.Tab.0.left" timestamp="1590238880020">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590238880020" />
+    <state width="905" height="182" key="GridCell.Tab.0.right" timestamp="1590238880021">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="905" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590238880021" />
+    <state x="288" y="41" key="Vcs.Push.Dialog.v2" timestamp="1589645464355">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="288" y="41" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1589645464355" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1586112886820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

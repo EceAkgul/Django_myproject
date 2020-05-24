@@ -47,7 +47,6 @@
                                 <tr>
                                         <th class ="text-center">Subject</th>
                                         <th class ="text-center">Haber </th>
-                                        <th class ="text-center">Comment </th>
                                         <th class ="text-center">Rate</th>
                                 </tr>
 
@@ -59,7 +58,6 @@
 
                                             <td  class="text-left">{{ rs.subject }}</td>
                                             <td  class="text-left">{{ rs.haber }}</td>
-                                            <td class="text-center">{{ rs.comment }}</td>
                                             <td  class="text-right">{{ rs.rate }}</td>
                                             <td class="text-left"><a class="btn-danger" href ="/user/deletecomment/{{ rs.id }}" onclick="return confirm('Delete! Are you sure?')">DELETE</a></td>
                                         </tr>
